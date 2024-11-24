@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+
+/* Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Style global */
+body {
+  font-family: 'DM Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Styles pour chaque carte */
+.nth-card-1 { grid-area: nth-card-1; }
+.nth-card-2 { grid-area: nth-card-2; }
+.nth-card-3 { grid-area: nth-card-3; }
+.nth-card-4 { grid-area: nth-card-4; }
+.nth-card-5 { grid-area: nth-card-5; }
+.nth-card-6 { grid-area: nth-card-6; }
+.nth-card-7 { grid-area: nth-card-7; }
+.nth-card-8 { grid-area: nth-card-8; }
+
+/* infos grid desktop*/
+@media (min-width: 1024px) {
+  .lg\:grid-template-desktop {
+    display: grid;
+    grid-template-areas: 
+      "nth-card-1 nth-card-3 nth-card-3 nth-card-3 nth-card-3 nth-card-7"
+      "nth-card-1 nth-card-3 nth-card-3 nth-card-3 nth-card-3 nth-card-7"
+      "nth-card-1 nth-card-4 nth-card-4 nth-card-6 nth-card-6 nth-card-7"
+      "nth-card-2 nth-card-4 nth-card-4 nth-card-6 nth-card-6 nth-card-7"
+      "nth-card-2 nth-card-5 nth-card-5 nth-card-8 nth-card-8 nth-card-8"
+      "nth-card-2 nth-card-5 nth-card-5 nth-card-8 nth-card-8 nth-card-8";
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, auto);
+    gap: 1.5rem;
+  }
+}
+
+/* infogrid mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+  .sm\:grid-template-mobile { /* petit conflit adapter en mobile */
+    display: grid;
+    grid-template-areas:
+      "nth-card-1"
+      "nth-card-3"
+      "nth-card-7"
+      "nth-card-4"
+      "nth-card-6"
+      "nth-card-5"
+      "nth-card-8";
+    grid-template-columns: 1fr; /* pour que les cartes soient une sous lautre */
+    grid-template-rows: auto; /* adaptation automatique de mes cartes*/
+    gap: 12px; /* espace entre les cartes */
+    width:100%;
+    min-width:425px;
+  }
+
+  .card {
+    width: 100%; /* Les cartes prennent toute la largeur */
+    max-width: 100%; /*prenne toutes la largeur */
+    margin: 0 auto; 
+  }
+}
