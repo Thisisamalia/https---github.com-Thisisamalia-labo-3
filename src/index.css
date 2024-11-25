@@ -13,7 +13,7 @@ body {
   background-color: #f9f9f9;
 }
 
-/* Styles pour chaque carte */
+/* Styles pour chaque cartes */
 .nth-card-1 { grid-area: nth-card-1; }
 .nth-card-2 { grid-area: nth-card-2; }
 .nth-card-3 { grid-area: nth-card-3; }
