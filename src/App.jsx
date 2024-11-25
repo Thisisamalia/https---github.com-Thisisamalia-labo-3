@@ -47,7 +47,7 @@ const cardsData = [
     content: "Faster audience",
     bgColor: "bg-pink-50",
     image: AudienceGrowthImage,
-    imagePosition: "top",
+    imagePosition: "bottom",
     className: "nth-card-5",
   },
   {
@@ -55,7 +55,7 @@ const cardsData = [
     content: "",
     bgColor: "bg-yellow-500",
     image: ConsistentScheduleImage,
-    imagePosition: "top",
+    imagePosition: "bottom",
     className: "nth-card-6",
   },
   {
@@ -72,7 +72,7 @@ const cardsData = [
     content: "",
     bgColor: "bg-purple-500",
     image: GrowFollowersImage,
-    imagePosition: "bottom",
+    imagePosition: "left",
     className: "nth-card-8",
   },
 ];

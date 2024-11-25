@@ -19,7 +19,10 @@ body {
 .nth-card-3 { grid-area: nth-card-3; }
 .nth-card-4 { grid-area: nth-card-4; }
 .nth-card-5 { grid-area: nth-card-5; }
-.nth-card-6 { grid-area: nth-card-6; }
+.nth-card-6 {
+  grid-area: nth-card-6;
+  position: relative; /*our positionnement de l'image */
+}
 .nth-card-7 { grid-area: nth-card-7; }
 .nth-card-8 { grid-area: nth-card-8; }
 
@@ -65,3 +68,10 @@ body {
     margin: 0 auto; 
   }
 }
+
+
+
+
+
+
+
