@@ -17,6 +17,7 @@ const cardsData = [
     bgColor: "bg-yellow-100",
     image: CreatePostImage,
     imagePosition: "bottom",
+    textColor:"text-black",
     className: "nth-card-1",
   },
   {
@@ -25,6 +26,7 @@ const cardsData = [
     bgColor: "bg-yellow-500",
     image: AIContentImage,
     imagePosition: "bottom",
+    textColor:"text-black",
     className: "nth-card-2",
   },
   {
@@ -33,6 +35,7 @@ const cardsData = [
     bgColor: "bg-purple-500",
     image: FiveStarsImage,
     imagePosition: "bottom",
+    textColor:"text-white",
     className: "nth-card-3",
   },
   {
@@ -41,6 +44,7 @@ const cardsData = [
     bgColor: "bg-pink-50",
     image: MultiplePlatformsImage,
     imagePosition: "top",
+    textColor:"text-black",
     className: "nth-card-4",
   },
   {
@@ -49,6 +53,7 @@ const cardsData = [
     bgColor: "bg-pink-50",
     image: AudienceGrowthImage,
     imagePosition: "bottom",
+    textColor:"text-black",
     className: "nth-card-5",
   },
   {
@@ -57,6 +62,7 @@ const cardsData = [
     bgColor: "bg-yellow-500",
     image: ConsistentScheduleImage,
     imagePosition: "bottom",
+    textColor:"text-black",
     className: "nth-card-6",
   },
   {
@@ -66,6 +72,7 @@ const cardsData = [
     bgColor: "bg-purple-100",
     image: ScheduleImage,
     imagePosition: "top",
+    textColor:"text-black",
     className: "nth-card-7",
   },
   {
@@ -74,6 +81,7 @@ const cardsData = [
     bgColor: "bg-purple-500",
     image: GrowFollowersImage,
     imagePosition: "left",
+    textColor:"text-white",
     className: "nth-card-8",
   },
 ];
@@ -100,7 +108,7 @@ const App = () => {
     </div>
   
     {/* Grille de cartes */}
-    <div className="grid gap-6 lg:grid-template-desktop sm:grid-template-mobile w-full">
+    <div className="grid gap-6 lg:grid-template-desktop sm:grid-template-mobile md:grid-template-tablet w-full">
       {cardsData
         .filter((card) =>
           card.title.toLowerCase().includes(searchTerm.toLowerCase())

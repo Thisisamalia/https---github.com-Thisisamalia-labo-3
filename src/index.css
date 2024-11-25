@@ -61,6 +61,7 @@ body {
     width:100%;
     min-width:425px;
   }
+  
 
   .card {
     width: 100%; /* Les cartes prennent toute la largeur */
@@ -73,5 +74,18 @@ body {
 
 
 
+/* version tablette */
 
-
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .md\:grid-template-tablet {
+      display: grid;
+      grid-template-areas: 
+        "nth-card-1 nth-card-3"
+        "nth-card-2 nth-card-4"
+        "nth-card-5 nth-card-6"
+        "nth-card-7 nth-card-8";
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto; 
+      gap: 1.5rem;
+    }
+  } 

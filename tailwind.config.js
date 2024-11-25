@@ -10,6 +10,7 @@ module.exports = {
         yellow500: "#F9C22E",
         pink50: "#F5EDFF",
         black: "#000000",
+        white: "#FFFFFF",
       },
       fontFamily: {
         dmSans: ["DM Sans", "sans-serif"],
